@@ -1,10 +1,13 @@
 package org.example.model;
 
-import org.example.entity.Proposta;
-
-public abstract class AbstractedAprovador {
+public class Aprovador {
     protected String nome;
     protected String departamento;
+
+    public Aprovador(String nome, String departamento) {
+        this.nome = nome;
+        this.departamento = departamento;
+    }
 
     public String getNome() {
         return nome;
@@ -21,6 +24,5 @@ public abstract class AbstractedAprovador {
     public void setDepartamento(String departamento) {
         this.departamento = departamento;
     }
-    public abstract Boolean aprovar(Proposta proposta);
-    public abstract Boolean reprovar(Proposta proposta);
+
 }

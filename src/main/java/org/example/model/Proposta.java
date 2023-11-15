@@ -1,19 +1,25 @@
 package org.example.model;
 
-import org.example.entity.Aprovador;
-import org.example.entity.Notificacao;
-import org.example.entity.Usuario;
-
 import java.time.LocalDate;
 
-public abstract class AbstractedProposta {
+public abstract class Proposta {
     protected String descricao;
     protected String documento;
     protected LocalDate dataCriacao;
     protected LocalDate dataAtualizacao;
     protected Boolean aprovada;
     protected Usuario registrador;
-    protected Aprovador aprovador;
+    protected AprovadorService aprovador;
+
+    public Proposta(String descricao, String documento, LocalDate dataCriacao, LocalDate dataAtualizacao, Boolean aprovada, Usuario registrador, AprovadorService aprovador) {
+        this.descricao = descricao;
+        this.documento = documento;
+        this.dataCriacao = dataCriacao;
+        this.dataAtualizacao = dataAtualizacao;
+        this.aprovada = aprovada;
+        this.registrador = registrador;
+        this.aprovador = aprovador;
+    }
 
     public String getDescricao() {
         return descricao;
@@ -63,13 +69,11 @@ public abstract class AbstractedProposta {
         this.registrador = registrador;
     }
 
-    public Aprovador getAprovador() {
+    public AprovadorService getAprovador() {
         return aprovador;
     }
 
-    public void setAprovador(Aprovador aprovador) {
+    public void setAprovador(AprovadorService aprovador) {
         this.aprovador = aprovador;
     }
-
-    public abstract Notificacao enviarNotificacao(); // Revisar na modelagem
 }

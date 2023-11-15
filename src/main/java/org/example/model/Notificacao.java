@@ -2,7 +2,16 @@ package org.example.model;
 
 import java.time.LocalDate;
 
-public abstract class AbstractedNotificacao {
+public class Notificacao {
+
+    private String mensagem;
+    private LocalDate timestamp;
+
+    public Notificacao(String mensagem, LocalDate timestamp) {
+        this.mensagem = mensagem;
+        this.timestamp = timestamp;
+    }
+
     public String getMensagem() {
         return mensagem;
     }
@@ -18,7 +27,4 @@ public abstract class AbstractedNotificacao {
     public void setTimestamp(LocalDate timestamp) {
         this.timestamp = timestamp;
     }
-
-    protected String mensagem;
-    protected LocalDate timestamp;
 }
