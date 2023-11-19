@@ -9,9 +9,9 @@ public abstract class Proposta {
     protected LocalDate dataAtualizacao;
     protected Boolean aprovada;
     protected Usuario registrador;
-    protected AprovadorService aprovador;
+    protected Aprovador aprovador;
 
-    public Proposta(String descricao, String documento, LocalDate dataCriacao, LocalDate dataAtualizacao, Boolean aprovada, Usuario registrador, AprovadorService aprovador) {
+    public Proposta(String descricao, String documento, LocalDate dataCriacao, LocalDate dataAtualizacao, Boolean aprovada, Usuario registrador, Aprovador aprovador) {
         this.descricao = descricao;
         this.documento = documento;
         this.dataCriacao = dataCriacao;
@@ -69,11 +69,11 @@ public abstract class Proposta {
         this.registrador = registrador;
     }
 
-    public AprovadorService getAprovador() {
+    public Aprovador getAprovador() {
         return aprovador;
     }
 
-    public void setAprovador(AprovadorService aprovador) {
+    public void setAprovador(Aprovador aprovador) {
         this.aprovador = aprovador;
     }
 }

@@ -1,24 +1,32 @@
 package org.example.adapters;
 
+import org.example.model.Notificacao;
 import org.example.model.Proposta;
 import org.example.model.Relatorio;
 import org.example.ports.SistemaPorta;
+import org.example.service.SistemaService;
 
 public class SistemaAdapter implements SistemaPorta {
 
+    private final SistemaService sistemaService;
+
+    public SistemaAdapter(SistemaService sistemaService) {
+        this.sistemaService = sistemaService;
+    }
+
     @Override
     public Proposta encaminharPropostas() {
-        return null;
+        return sistemaService.encaminharPropostas();
     }
 
     @Override
     public Relatorio gerarRelatorios() {
-        return null;
+        return sistemaService.gerarRelatorios();
     }
 
     @Override
-    public Proposta enviarNotificacoes() {
-        return null;
+    public Notificacao enviarNotificacoes() {
+        return sistemaService.enviarNotificacao();
     }
 
 }

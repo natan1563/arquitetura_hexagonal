@@ -3,9 +3,9 @@ package org.example.model;
 public class Sistema {
     protected Proposta[] propostas;
     protected Usuario[] usuarios;
-    protected AprovadorService[] aprovadores;
+    protected Aprovador[] aprovadores;
 
-    public Sistema(Proposta[] propostas, Usuario[] usuarios, AprovadorService[] aprovadores) {
+    public Sistema(Proposta[] propostas, Usuario[] usuarios, Aprovador[] aprovadores) {
         this.propostas = propostas;
         this.usuarios = usuarios;
         this.aprovadores = aprovadores;
@@ -27,11 +27,11 @@ public class Sistema {
         this.usuarios = usuarios;
     }
 
-    public AprovadorService[] getAprovadores() {
+    public Aprovador[] getAprovadores() {
         return aprovadores;
     }
 
-    public void setAprovadores(AprovadorService[] aprovadores) {
+    public void setAprovadores(Aprovador[] aprovadores) {
         this.aprovadores = aprovadores;
     }
 }

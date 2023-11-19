@@ -1,5 +1,6 @@
-package org.example.model;
+package org.example.service;
 
+import org.example.model.Proposta;
 import org.example.ports.RelatorioPorta;
 
 public class RelatorioService {

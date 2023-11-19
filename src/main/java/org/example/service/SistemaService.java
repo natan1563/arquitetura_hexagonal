@@ -1,5 +1,8 @@
-package org.example.model;
+package org.example.service;
 
+import org.example.model.Notificacao;
+import org.example.model.Proposta;
+import org.example.model.Relatorio;
 import org.example.ports.SistemaPorta;
 
 public class SistemaService {
@@ -10,7 +13,7 @@ public class SistemaService {
         this.sistemaPorta = sistemaPorta;
     }
 
-    public Proposta enviarNotificacao() {
+    public Notificacao enviarNotificacao() {
         return sistemaPorta.enviarNotificacoes();
     }
 
