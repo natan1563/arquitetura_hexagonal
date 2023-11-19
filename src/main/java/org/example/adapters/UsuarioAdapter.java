@@ -6,11 +6,7 @@ import org.example.service.UsuarioService;
 
 public class UsuarioAdapter implements UsuarioPorta {
 
-    private final UsuarioService usuarioService;
-
-    public UsuarioAdapter(UsuarioService usuarioService) {
-        this.usuarioService = usuarioService;
-    }
+    private UsuarioService usuarioService;
 
     @Override
     public Proposta registrarProposta(Proposta proposta) {

@@ -3,6 +3,9 @@ package org.example.model;
 public class Relatorio {
     private Proposta[] propostas;
 
+    public Relatorio() {
+    }
+
     public Relatorio(Proposta[] propostas) {
         this.propostas = propostas;
     }

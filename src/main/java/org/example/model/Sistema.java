@@ -1,9 +1,9 @@
 package org.example.model;
 
 public class Sistema {
-    protected Proposta[] propostas;
-    protected Usuario[] usuarios;
-    protected Aprovador[] aprovadores;
+    private Proposta[] propostas;
+    private Usuario[] usuarios;
+    private Aprovador[] aprovadores;
 
     public Sistema(Proposta[] propostas, Usuario[] usuarios, Aprovador[] aprovadores) {
         this.propostas = propostas;

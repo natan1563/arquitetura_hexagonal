@@ -6,11 +6,7 @@ import org.example.service.RelatorioService;
 
 public class RelatorioAdapter implements RelatorioPorta {
 
-    private final RelatorioService relatorioService;
-
-    public RelatorioAdapter(RelatorioService relatorioService) {
-        this.relatorioService = relatorioService;
-    }
+    private RelatorioService relatorioService;
 
     @Override
     public Proposta[] gerar() {

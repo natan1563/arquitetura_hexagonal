@@ -6,11 +6,7 @@ import org.example.service.AprovadorService;
 
 public class AprovadorAdapter implements AprovadorPorta {
 
-    private final AprovadorService aprovadorService;
-
-    public AprovadorAdapter(AprovadorService aprovadorService) {
-        this.aprovadorService = aprovadorService;
-    }
+    private AprovadorService aprovadorService;
 
     @Override
     public Boolean aprovar(Proposta proposta) {

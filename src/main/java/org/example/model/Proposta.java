@@ -2,14 +2,14 @@ package org.example.model;
 
 import java.time.LocalDate;
 
-public abstract class Proposta {
-    protected String descricao;
-    protected String documento;
-    protected LocalDate dataCriacao;
-    protected LocalDate dataAtualizacao;
-    protected Boolean aprovada;
-    protected Usuario registrador;
-    protected Aprovador aprovador;
+public class Proposta {
+    private String descricao;
+    private String documento;
+    private LocalDate dataCriacao;
+    private LocalDate dataAtualizacao;
+    private Boolean aprovada;
+    private Usuario registrador;
+    private Aprovador aprovador;
 
     public Proposta(String descricao, String documento, LocalDate dataCriacao, LocalDate dataAtualizacao, Boolean aprovada, Usuario registrador, Aprovador aprovador) {
         this.descricao = descricao;
@@ -19,6 +19,9 @@ public abstract class Proposta {
         this.aprovada = aprovada;
         this.registrador = registrador;
         this.aprovador = aprovador;
+    }
+
+    public Proposta() {
     }
 
     public String getDescricao() {

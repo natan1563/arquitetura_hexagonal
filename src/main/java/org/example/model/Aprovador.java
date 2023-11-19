@@ -1,8 +1,8 @@
 package org.example.model;
 
 public class Aprovador {
-    protected String nome;
-    protected String departamento;
+    private String nome;
+    private String departamento;
 
     public Aprovador(String nome, String departamento) {
         this.nome = nome;

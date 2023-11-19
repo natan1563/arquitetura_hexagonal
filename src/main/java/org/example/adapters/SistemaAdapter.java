@@ -8,11 +8,7 @@ import org.example.service.SistemaService;
 
 public class SistemaAdapter implements SistemaPorta {
 
-    private final SistemaService sistemaService;
-
-    public SistemaAdapter(SistemaService sistemaService) {
-        this.sistemaService = sistemaService;
-    }
+    private SistemaService sistemaService;
 
     @Override
     public Proposta encaminharPropostas() {

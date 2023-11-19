@@ -1,11 +1,11 @@
 package org.example.model;
 
 public class Usuario {
-    protected String nome;
-    protected String sobrenome;
-    protected String email;
-    protected String senha;
-    protected String nivelAcesso;
+    private String nome;
+    private String sobrenome;
+    private String email;
+    private String senha;
+    private String nivelAcesso;
 
     public Usuario(String nome, String sobrenome, String email, String senha, String nivelAcesso) {
         this.nome = nome;
